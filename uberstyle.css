@@ -48,6 +48,7 @@ body, #Wrapper, #ColumnGrid {
 	position: fixed;
 	opacity: 1!important;
     border-bottom: 1px solid #990000;
+	z-index: 99999;
 }
 #HeaderWrapper.Fixed {width: 100%!important}
 /*Header*/
@@ -84,6 +85,7 @@ li#SearchPane {
 	content: "";
     display: block;
     background-image: url(images/header.jpg);
+	/*background-image: url(banner.php);*/
     background-repeat: repeat-x;
     background-position: center bottom;
     background-attachment: fixed;

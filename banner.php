@@ -1,6 +1,3 @@
-<?php 
-header('Content-Type: image/jpeg');
-?>
 <!DOCTYPE HTML>
 <html>
 <head>

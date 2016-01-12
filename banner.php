@@ -5,7 +5,7 @@ header('Content-Type: image/jpeg');
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="author" content="Rafa&euml;l De Jongh, Lino Talaveron"/>
+<meta name="author" content="Rafa&euml;l De Jongh"/>
 <meta name="description" content="Header Image"/>
 <title>Header Image</title>
 <style>

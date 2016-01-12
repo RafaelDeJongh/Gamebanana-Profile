@@ -5,6 +5,7 @@ $images = glob($directory . "*.jpg");
 $header = array();
 foreach($images as $image){$header[] = $image;}
 $randomimg=array_rand($header);
+$rdmimg=$header[$randomimg];
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -15,7 +16,7 @@ $randomimg=array_rand($header);
 header {
 	width:100%;
 	height:520px;
-	background-image: url("<?php echo $header[$randomimg];?>");
+	background-image: url("<?php echo $rdmimg; ?>");
 	background-size:cover;
 	background-position:center 30%;
 }

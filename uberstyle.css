@@ -1,7 +1,7 @@
 @charset "utf-8";
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
 /*Hide Me*/
-.MarkdownEditor legend, .MarkdownEditor .Inserters, .InputHelp, #IsAnonymous, #Screenshots, #FooterWrapper, img[alt="Download icon"], #TitleBreadcrumb, #PageTitleWrapper, .IconSheet.MaximizeMinimizeButton, ul#ImportantLinks, #AtfLeaderboard, #BtfLeaderboardRow, #AdsByCurseBanner {display:none!important}
+#DasHeaderLink, .FormModule p.Description, #OpskinsHeaderLink, .MarkdownEditor legend, .ContentEditableEditor .Inserters, .InputHelp, #IsAnonymous, #Screenshots, #FooterWrapper, img[alt="Download icon"], #TitleBreadcrumb, #PageTitleWrapper, .IconSheet.MaximizeMinimizeButton, ul#ImportantLinks, #AtfLeaderboard, #BtfLeaderboardRow, #AdsByCurseBanner {display:none!important}
 /*Style*/
 html {
     height: 100%;
@@ -82,18 +82,17 @@ li#SearchPane {
 	padding: 0;
 }
 #DropdownMenuSubNavigator:before {
-	content: "";
+    content: "";
     display: block;
     background-image: url(images/header.jpg);
-	/*background-image: url(banner.php);*/
-    background-repeat: repeat-x;
-    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-position: center top;
     background-attachment: fixed;
-    background-size: 1920px;
-    height: 520px;
+    background-size: 100%;
+    height: 32vw;
     width: 100%;
     overflow: hidden;
-    z-index: -1;
+    position: relative;
 }
 /*Subnav*/
 #DropdownMenuSubNavigator ul ul {
@@ -192,7 +191,7 @@ img.PreviewImage:hover {opacity:1;}
 }
 #StaffProfileModule .Content::after {
     content:"";
-    background-image: url("http://www.rafaeldejongh.com/images/CV/rafael.jpg");
+    background-image: url("http://rafaeldejongh.tk/data/sites/Portfolio/portfolio10/images/CV/rafael.jpg");
     height: 500px;
     width: 310px;
     display: block;
@@ -258,9 +257,6 @@ img.PreviewImage:hover {opacity:1;}
 }
 .Modal .Toolbar {
     float: right;
-}
-form.MainForm {
-    margin-top: -10px;
 }
 .Toolbars button, #ActivityPane .AjaxListPaginator button{
     box-shadow: none;

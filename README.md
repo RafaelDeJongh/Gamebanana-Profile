@@ -1,2 +1,2 @@
 # Gamebanana
-The Uberstyle for my profile on gamebanana.com/members/366132
+The Uberstyle for my profile on www.gamebanana.com/members/366132

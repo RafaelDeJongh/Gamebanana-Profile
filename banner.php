@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*header('Content-Type: image/jpeg');*/
 $directory = "images/";
 $images = glob($directory . "*.jpg");

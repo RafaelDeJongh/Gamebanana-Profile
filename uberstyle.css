@@ -1,8 +1,33 @@
 @charset "utf-8";
+/* This uberstyle is created by Rafael De Jongh.
+** This code is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+Content Table:
+------------------
+- Reset
+- Hide Elements
+- Body
+	- Global Colors
+- Header
+	- Banner
+	- Subnav
+- Content
+	- Staff Module
+	- Comments
+	- Footer
+- Buttons
+- Links
+- Scrollbar
+- Selection
+------------------
+Reset
+------------------*/
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
-/*Hide Me*/
+/*Hide Elements
+---------------*/
 #DasHeaderLink, .FormModule p.Description, #OpskinsHeaderLink, .MarkdownEditor legend, .ContentEditableEditor .Inserters, .InputHelp, #IsAnonymous, #Screenshots, #FooterWrapper, img[alt="Download icon"], #TitleBreadcrumb, #PageTitleWrapper, .IconSheet.MaximizeMinimizeButton, ul#ImportantLinks, #AtfLeaderboard, #BtfLeaderboardRow, #AdsByCurseBanner{display:none!important}
-/*Style*/
+/*Body
+---------------*/
 html{
 	height:100%;
 	-webkit-box-sizing:border-box;
@@ -18,10 +43,9 @@ body{
 	line-height:1.6;
 	color:#bbb;
 }
-/*Global Colors*/
-#HeaderWrapper, #rdjfooter{
-	background:#17171a!important;
-}
+/*Global Colors
+---------------*/
+#HeaderWrapper, #rdjfooter{background:#17171a!important;}
 body, .Module > .Content, 
 #DropdownMenuSubNavigator, 
 div.GenericPreviewListModule ul, 
@@ -54,7 +78,8 @@ body, #Wrapper{
 	z-index:99999;
 }
 #HeaderWrapper.Fixed{width:100%!important}
-/*Header*/
+/*Header
+---------------*/
 #Header{
 	width:90%;
 	margin:auto;
@@ -72,13 +97,10 @@ li#SearchPane{
 	left:325px!important;
 	top:-3px!important;
 }
-#SearchPane input{
-	outline:none;
-}
-#NavigatorPanes > li > div{
-	padding:15px 5px 10px 9px;
-}
-/*Banner*/
+#SearchPane input{outline:none}
+#NavigatorPanes > li > div{padding:15px 5px 10px 9px}
+/*Banner
+---------------*/
 #DropdownMenuSubNavigator{
 	text-align:center;
 	margin:auto;
@@ -97,18 +119,19 @@ li#SearchPane{
 	overflow:hidden;
 	position:relative;
 }
-/*Subnav*/
-#DropdownMenuSubNavigator ul ul{
-	box-shadow:none;
-}
+/*Subnav
+---------------*/
+#DropdownMenuSubNavigator ul ul{box-shadow:none}
 #DropdownMenuSubNavigator .sf-menu ul > li{
 	background:#1a1a1a;
 	text-align:left;
+	margin:0;
 }
 #DropdownMenuSubNavigator .sf-menu .ActiveEntry, #DropdownMenuSubNavigator li a:hover, #DropdownMenuSubNavigator .sf-menu ul > li a:hover{
 	background:#313132;
 }
-/*Content*/
+/*Content
+---------------*/
 .Content{
 	margin:0!important;
 	padding:0!important;
@@ -150,7 +173,7 @@ img.PreviewImage{
 	height:11vw;
 	box-shadow:none;
 	object-fit:cover;
-	opacity:0.8
+	opacity:.8
 }
 img.PreviewImage:hover{opacity:1;}
 .RichText blockquote{
@@ -159,7 +182,8 @@ img.PreviewImage:hover{opacity:1;}
 	-o-transition:opacity .2s ease;
 	transition:opacity .2s ease;
 }
-/*Staff Module*/
+/*Staff Module
+---------------*/
 #StaffProfileModule div.Content dl{
 	float:left;
 	width:60%;
@@ -172,17 +196,17 @@ img.PreviewImage:hover{opacity:1;}
 }
 #StaffProfileModule div.Content dd.Biography{
 	font-size:1rem;
+	white-space:pre-line;
 }
+#StaffProfileModule div.Content dd.Biography br{display:none}
 #StaffProfileModule div.Content dd.Biography::after{
 	content:"My name is Rafaël De Jongh, I am 21 years old and I am a 2D & 3D artist. I've been doing game modification for a good eight years now and I'm specialized in Texturing. Besides game modification I also enjoy making websites with HTML5, CSS3, PHP and MySQL. \A \A My goal in life is to become a Web Developer and keep game modification as my hobby. These days I mostly spend my time on a known modding community called Gamebanana. There I have my own Studio called Apocalyptic Studios where we practise in various contests to test our own skills and to produce quality content for the Gamebanana community. \A \A More information about myself can be found on my portfolio at www.rafaeldejongh.com or if you have any more question you can contact me directly, using the contact form below.";
 	display:block;
 	border-top:1px solid #232324;
-	margin:1% 0;
+	border-bottom:1px solid #232324;
+	margin:2% 0;
 	padding:1% 0;
 	white-space:pre-wrap;
-	width:80%;
-	float:left;
-	clear:both;
 }
 #StaffProfileModule div.Content dd.Initiatives{
 	clear:both;
@@ -194,7 +218,7 @@ img.PreviewImage:hover{opacity:1;}
 }
 #StaffProfileModule .Content::after{
 	content:"";
-	background-image:url("http://rafaeldejongh.tk/data/sites/Portfolio/portfolio10/images/CV/rafael.jpg");
+	background-image:url("images/RafaelDeJongh.jpg");
 	height:500px;
 	width:310px;
 	display:block;
@@ -209,12 +233,11 @@ img.PreviewImage:hover{opacity:1;}
 	box-shadow:0px 0px 2px #111;
 	margin-bottom:2em;
 }
-/*Comments*/
-.RichText{
-	font-size:0.9rem;
-}
+/*Comments
+---------------*/
+.RichText{font-size:.9rem}
 #PostsListModule .Content > ul > li{
-	padding:1% 5%;
+	padding:1% 5%!important;
 	border:none;
 }
 #PostAddFormRequesterModule .Content{
@@ -229,9 +252,7 @@ img.PreviewImage:hover{opacity:1;}
 	margin:0 15px 0 0;
 	font-weight:600;
 }
-#PostsListModule .Content{
-	padding:0!important;
-}
+#PostsListModule .Content{padding:0!important}
 .PageNavigation:first-child{display:none;}
 .Modal .Contents{
 	padding:0;
@@ -248,30 +269,25 @@ img.PreviewImage:hover{opacity:1;}
 	outline:none;
 	overflow:hidden;
 }
-.Submit{
-	padding:0;
-}
-.Toolbars{
-	float:left;
-}
-.ViewModeSwitchers{
-	float:right;
-	margin-right:0.7%;
-}
-.Modal .Toolbar{
-	float:right;
-}
-.Toolbars button, #ActivityPane .AjaxListPaginator button{
-	box-shadow:none;
-}
-button.CloseModal{
-	border-radius:0;
-}
+.Submit{padding:0}
+.Toolbars{float:left}
+.ViewModeSwitchers{float:right;margin-right:.7%}
+.Modal .Toolbar{float:right}
+.Toolbars button, #ActivityPane .AjaxListPaginator button{box-shadow:none}
+button.CloseModal{border-radius:0}
 .PostTools button{box-shadow:none; margin:0 2px}
-.LabelStat{
-	border:none!important;
+.LabelStat{	border:none!important}
+/*Footer
+---------------*/
+#rdjfooter{
+	padding:11px 0px;
+	text-align:center;
+	margin:1px 0 0 0!important;
+	border-top:1px solid #990000;
+	font-size:0.84rem;
 }
-/*Buttons*/
+/*Buttons
+---------------*/
 button, .ButtonLike, input[type="button"]{
 	-webkit-appearance:button;
 	cursor:pointer;
@@ -289,22 +305,15 @@ button, .ButtonLike, input[type="button"]{
 	transition:all 0.1s ease-in-out;
 	padding:6px 10px 10px;
 }
-button:hover, .ButtonLike:hover, input[type="button"]:hover {background:#b30000;}
+button:hover, .ButtonLike:hover, input[type="button"]:hover{background:#b30000;}
 button:focus, .ButtonLike:focus, input[type="button"]:focus{
 	background:#b30000;
 	box-shadow:inset 0 -2px 0 rgba(0, 0, 0, 0.45);
 	text-shadow:0 1px 0 rgba(0, 0, 0, 0.45);
 	top:1px;
 }
-/*Footer*/
-#rdjfooter{
-	padding:11px 0px;
-	text-align:center;
-	margin:1px 0 0 0!important;
-	border-top:1px solid #990000;
-	font-size:0.84rem;
-}
-/*Links*/
+/*Links
+---------------*/
 a{
 	color:#eee;
 	text-decoration:none;
@@ -314,12 +323,14 @@ a{
 	transition:all .2s ease;
 }
 a:visited, a:active, a:hover{color:#fff}
-/*Scrollbar*/
+/*Scrollbar
+---------------*/
 ::-webkit-scrollbar{width:12px;height:12px;background-color:#1A1A1A;}
 ::-webkit-scrollbar-corner{background-color:#0e0e0e}
 ::-webkit-scrollbar-track{background-color:#121212}
 ::-webkit-scrollbar-thumb{background:#990000}
 ::-webkit-scrollbar:horizontal{height:12px}
-/*Selection*/
+/*Selection
+---------------*/
 ::selection{color:#fff;background-color:#990000}
 ::-moz-selection{color:#fff;background-color:#990000}

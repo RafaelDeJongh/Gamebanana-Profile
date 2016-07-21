@@ -76,6 +76,8 @@ body, #Wrapper{
 	z-index:99999;
 }
 #HeaderWrapper.Fixed{width:100%!important}
+#HeaderWrapper.Fixed #MainContentHeader #DropdownMenuSubNavigator{display:none}
+#HeaderWrapper.Fixed + div#MainContent{margin-top:390px!important}
 /*Header
 ---------------*/
 #Header{
@@ -178,6 +180,7 @@ img.PreviewImage:hover{opacity:1;}
 }
 /*Staff Module
 ---------------*/
+div#StaffProfileModule{background-color:#1a1a1a}
 #StaffProfileModule div.Content dl{
 	float:left;
 	width:60%;
@@ -317,6 +320,20 @@ a{
 	transition:all .2s ease;
 }
 a:visited, a:active, a:hover{color:#fff}
+/*Mediaqueries
+---------------*/
+@media screen and (max-width:900px) {
+	nav#DropdownMenuSubNavigator{display: none}
+	#SkinPreviewListModule{margin-top:105px}
+	#StaffProfileModule div.Content dl{width:100%}
+	#StaffProfileModule .Content::after{
+		min-height: 600px;
+		height:140vw;
+		background-size: 100% 100%;
+		width: 99%;
+		float:left;
+	}
+}
 /*Scrollbar
 ---------------*/
 ::-webkit-scrollbar{width:12px;height:12px;background-color:#1A1A1A;}

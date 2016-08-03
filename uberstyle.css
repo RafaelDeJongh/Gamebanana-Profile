@@ -43,7 +43,7 @@ body{
 }
 /*Global Colors
 ---------------*/
-#HeaderWrapper, #rdjfooter{background:#17171a!important;}
+#HeaderWrapper, #rdjfooter{background:#17171a!important}
 body, .Module > .Content, 
 #DropdownMenuSubNavigator, 
 div.GenericPreviewListModule ul, 
@@ -72,12 +72,23 @@ body, #Wrapper{
 	width:100%;
 	position:fixed;
 	opacity:1!important;
-	border-bottom:1px solid #990000;
+	border-bottom:1px solid #900;
 	z-index:99999;
 }
 #HeaderWrapper.Fixed{width:100%!important}
 #HeaderWrapper.Fixed #MainContentHeader #DropdownMenuSubNavigator{display:none}
-#HeaderWrapper.Fixed + div#MainContent{margin-top:390px!important}
+#HeaderWrapper.Fixed + div#MainContent:before{
+	content:"";
+	display:block;
+	background-image:url(images/header.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-attachment:fixed;
+	background-size:100%;
+	height:32vw;
+	width:100%;
+	overflow:hidden;
+	position:relative}
 /*Header
 ---------------*/
 #Header{
@@ -118,6 +129,9 @@ li#SearchPane{
 	width:100%;
 	overflow:hidden;
 	position:relative;
+}
+#MainContent{
+	margin-top:0!important;
 }
 /*Subnav
 ---------------*/
@@ -171,7 +185,7 @@ img.PreviewImage{
 	object-fit:cover;
 	opacity:.8
 }
-img.PreviewImage:hover{opacity:1;}
+img.PreviewImage:hover{opacity:1}
 .RichText blockquote{
 	-webkit-transition:opacity .2s ease;
 	-moz-transition:opacity .2s ease;
@@ -250,7 +264,7 @@ div#StaffProfileModule{background-color:#1a1a1a}
 	font-weight:600;
 }
 #PostsListModule .Content{padding:0!important}
-.PageNavigation:first-child{display:none;}
+.PageNavigation:first-child{display:none}
 .Modal .Contents{
 	padding:0;
 	width:90%;
@@ -280,7 +294,7 @@ button.CloseModal{border-radius:0}
 	padding:11px 0px;
 	text-align:center;
 	margin:1px 0 0 0!important;
-	border-top:1px solid #990000;
+	border-top:1px solid #900;
 	font-size:0.84rem;
 }
 /*Buttons
@@ -288,7 +302,7 @@ button.CloseModal{border-radius:0}
 button, .ButtonLike, input[type="button"]{
 	-webkit-appearance:button;
 	cursor:pointer;
-	background:#990000;
+	background:#900;
 	border:none;
 	outline:none;
 	background-clip:padding-box;
@@ -302,7 +316,7 @@ button, .ButtonLike, input[type="button"]{
 	transition:all 0.1s ease-in-out;
 	padding:6px 10px 10px;
 }
-button:hover, .ButtonLike:hover, input[type="button"]:hover{background:#b30000;}
+button:hover, .ButtonLike:hover, input[type="button"]:hover{background:#b30000}
 button:focus, .ButtonLike:focus, input[type="button"]:focus{
 	background:#b30000;
 	box-shadow:inset 0 -2px 0 rgba(0, 0, 0, 0.45);
@@ -322,26 +336,26 @@ a{
 a:visited, a:active, a:hover{color:#fff}
 /*Mediaqueries
 ---------------*/
-@media screen and (max-width:900px) {
-	nav#DropdownMenuSubNavigator{display: none}
+@media screen and (max-width:900px){
+	nav#DropdownMenuSubNavigator{display:none}
 	#SkinPreviewListModule{margin-top:105px}
 	#StaffProfileModule div.Content dl{width:100%}
 	#StaffProfileModule .Content::after{
-		min-height: 600px;
+		min-height:600px;
 		height:140vw;
-		background-size: 100% 100%;
-		width: 99%;
+		background-size:100% 100%;
+		width:99%;
 		float:left;
 	}
 }
 /*Scrollbar
 ---------------*/
-::-webkit-scrollbar{width:12px;height:12px;background-color:#1A1A1A;}
+::-webkit-scrollbar{width:12px;height:12px;background-color:#1A1A1A}
 ::-webkit-scrollbar-corner{background-color:#0e0e0e}
 ::-webkit-scrollbar-track{background-color:#121212}
-::-webkit-scrollbar-thumb{background:#990000}
+::-webkit-scrollbar-thumb{background:#900}
 ::-webkit-scrollbar:horizontal{height:12px}
 /*Selection
 ---------------*/
-::selection{color:#fff;background-color:#990000}
-::-moz-selection{color:#fff;background-color:#990000}
+::selection{color:#fff;background-color:#900}
+::-moz-selection{color:#fff;background-color:#900}

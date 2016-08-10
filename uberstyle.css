@@ -23,7 +23,7 @@ Reset
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
 /*Hide Elements
 ---------------*/
-.ModuleTools, #DasHeaderLink, .FormModule p.Description, #OpskinsHeaderLink, .MarkdownEditor legend, .ContentEditableEditor .Inserters, .InputHelp, #IsAnonymous, #Screenshots, #FooterWrapper, img[alt="Download icon"], #TitleBreadcrumb, #PageTitleWrapper, .IconSheet.MaximizeMinimizeButton, ul#ImportantLinks, #AtfLeaderboard, #BtfLeaderboardRow, #AdsByCurseBanner{display:none!important}
+div#SubmissionType,.ModuleTools, #DasHeaderLink,.FormModule p.Description,#OpskinsHeaderLink,.MarkdownEditor legend, .ContentEditableEditor .Inserters, .InputHelp, #IsAnonymous, #Screenshots, #FooterWrapper, img[alt="Download icon"], #TitleBreadcrumb, #PageTitleWrapper, .IconSheet.MaximizeMinimizeButton, ul#ImportantLinks, #AtfLeaderboard, #BtfLeaderboardRow, #AdsByCurseBanner{display:none!important}
 /*Body
 ---------------*/
 html{
@@ -211,7 +211,8 @@ div#StaffProfileModule{background-color:#1a1a1a}
 }
 #StaffProfileModule div.Content dd.Biography br{display:none}
 #StaffProfileModule div.Content dd.Biography::after{
-	content:"My name is Rafaël De Jongh, I am 21 years old and I am a 2D & 3D artist. I've been doing game modification for a good eight years now and I'm specialized in Texturing. Besides game modification I also enjoy making websites with HTML5, CSS3, PHP and MySQL. \A \A My goal in life is to become a Web Developer and keep game modification as my hobby. These days I mostly spend my time on a known modding community called Gamebanana. There I have my own Studio called Apocalyptic Studios where we practise in various contests to test our own skills and to produce quality content for the Gamebanana community. \A \A More information about myself can be found on my portfolio at www.rafaeldejongh.com or if you have any more question you can contact me directly, using the contact form below.";
+	/*content:"My name is Rafaël De Jongh, I am 21 years old and I am a 2D & 3D artist. I've been doing game modification for a good eight years now and I'm specialized in Texturing. Besides game modification I also enjoy making websites with HTML5, CSS3, PHP and MySQL. \A \A My goal in life is to become a Web Developer and keep game modification as my hobby. These days I mostly spend my time on a known modding community called Gamebanana. There I have my own Studio called Apocalyptic Studios where we practise in various contests to test our own skills and to produce quality content for the Gamebanana community. \A \A More information about myself can be found on my portfolio at www.rafaeldejongh.com or if you have any more question you can contact me directly, using the contact form below.";*/
+	content:"My name is Rafaël De Jongh, I am 21 years old and I am a Web Developer & 3D artist.\A \A My passion in life is to develop and design websites, to always search for a new challenge and keep the focus user centered.\A I started developing websites from a young age, each time facing a new challenge to achieve something new and exciting.\A Experimenting with lots of different code & programming languages made me learn a lot in all these years to what I know today.\A Besides that I love my hobby which is Game Development where I am specialized in creating 2D Textures for 3D models.\A \A My main goal in life is to become a Full Stack Web Developer and keep Game Development as my hobby.\A I am currently studying in college to get my professional bachelor degree in Cross Media Development,\A besides that I mostly spend my time on a known game modding community called Gamebanana.\A \A I am currently searching for a job in the Web Developing sector, but would love a position in the Game Developing sector as well.\A \A More information about myself can be found on:www.rafaeldejongh.com";
 	display:block;
 	border-top:1px solid #232324;
 	border-bottom:1px solid #232324;
@@ -230,19 +231,19 @@ div#StaffProfileModule{background-color:#1a1a1a}
 #StaffProfileModule .Content::after{
 	content:"";
 	background-image:url("images/RafaelDeJongh.jpg");
-	height:500px;
-	width:310px;
+	height:570px;
+	width:340px;
 	display:block;
 	font-size:1rem;
 	float:right;
-	-webkit-border-radius:1em;
-	-moz-border-radius:1em;
-	border-radius:1em;
-	border:1px solid #000;
-	-moz-box-shadow:0px 0px 2px #111;
-	-webkit-box-shadow:0px 0px 2px #111;
-	box-shadow:0px 0px 2px #111;
-	margin-bottom:2em;
+	margin:1.5em 0;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #111;
+	-moz-box-shadow:0 1px 4px #111;
+	-webkit-box-shadow:0 1px 4px #111;
+	box-shadow:0 1px 4px #111;
 }
 /*Comments
 ---------------*/

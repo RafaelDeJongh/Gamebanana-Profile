@@ -231,6 +231,7 @@ div#StaffProfileModule{background-color:#1a1a1a}
 #StaffProfileModule .Content::after{
 	content:"";
 	background-image:url("images/RafaelDeJongh.jpg");
+	background-size:cover;
 	height:570px;
 	width:340px;
 	display:block;

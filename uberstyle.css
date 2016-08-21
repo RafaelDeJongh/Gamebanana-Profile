@@ -99,11 +99,11 @@ body, #Wrapper{
 	margin:auto;
 }
 #HeaderWrapper header{
-	padding: 0 3%;
+	padding:0 3%;
 }
 #HeaderWrapper header #Navigator{
-	float: right;
-	margin-top: 4px;
+	float:right;
+	margin-top:4px;
 }
 #NetworkLinks{float:left}
 #NetworkLinks li{display:none}
@@ -210,11 +210,11 @@ img.PreviewImage:hover{opacity:1}
 	position:absolute;
 	top:-16px;
 	left:calc(50% - 10px);
-	width: 0; 
-	height: 0; 
+	width:0; 
+	height:0; 
 	border-left:17px solid transparent;
 	border-right:17px solid transparent;
-	border-bottom: 20px solid black;
+	border-bottom:20px solid black;
 }
 /*Staff Module
 ---------------*/
@@ -272,8 +272,8 @@ div#StaffProfileModule{background-color:#1a1a1a}
 /*Comments
 ---------------*/
 .ContentEditableEditor .InputWrapper .Editor{
-	width: 100%;
-	margin: 0;
+	width:100%;
+	margin:0;
 }
 .RichText{width:99%!important}
 #PostsListModule .Content > ul > li{
@@ -309,22 +309,26 @@ div#StaffProfileModule{background-color:#1a1a1a}
 	outline:none;
 	overflow:hidden;
 }
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Source textarea {
+	float:left;
+	margin:10px 0 0 -20px;
+}
 .Submit{padding:0}
 .Toolbars{float:left}
 .ViewModeSwitchers{
-	float: left;
-	margin-left: 10px;
+	float:left;
+	margin-left:10px;
 }
 button.CloseModal{border-radius:0}
 .Toolbars button, #ActivityPane .AjaxListPaginator button{
-	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
-	margin: 0 1px;
+	box-shadow:inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+	margin:0 1px;
 }
 .PostTools button{box-shadow:none; margin:0 2px}
 .LabelStat{	border:none!important}
 .MainForm .Submit{
-	padding: 0 15px;
-	margin-top: -10px;
+	padding:0 15px;
+	margin-top:-10px;
 }
 /*Footer
 ---------------*/

@@ -83,7 +83,7 @@ body, #Wrapper{
 #HeaderWrapper.Fixed + div#MainContent:before{
 	content:"";
 	display:block;
-	background-image:url(images/header.jpg);
+	/*background-image:url(images/header.jpg);*/
 	background-image:url(http://rafaeldejongh.tk/data/GB/Rafael/images/header.php);
 	background-repeat:no-repeat;
 	background-position:center top;

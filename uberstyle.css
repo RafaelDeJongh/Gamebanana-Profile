@@ -315,7 +315,6 @@ div#StaffProfileModule{background-color:#1a1a1a}
 	float: left;
 	margin-left: 10px;
 }
-.Modal .Toolbar{float:right}
 button.CloseModal{border-radius:0}
 .Toolbars button, #ActivityPane .AjaxListPaginator button{
 	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);

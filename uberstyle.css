@@ -84,6 +84,7 @@ body, #Wrapper{
 	content:"";
 	display:block;
 	background-image:url(images/header.jpg);
+	background-image:url(http://rafaeldejongh.tk/data/GB/Rafael/images/header.php);
 	background-repeat:no-repeat;
 	background-position:center top;
 	background-attachment:fixed;
@@ -94,17 +95,9 @@ body, #Wrapper{
 	position:relative}
 /*Header
 ---------------*/
-#Header{
-	width:90%;
-	margin:auto;
-}
-#HeaderWrapper header{
-	padding:0 3%;
-}
-#HeaderWrapper header #Navigator{
-	float:right;
-	margin-top:4px;
-}
+#Header{width:90%;margin:auto}
+#HeaderWrapper header{padding:0 3%}
+#HeaderWrapper header #Navigator{float:right;margin-top:4px}
 #NetworkLinks{float:left}
 #NetworkLinks li{display:none}
 #NetworkLinks li:first-of-type{display:block}
@@ -140,9 +133,7 @@ li#SearchPane{
 	overflow:hidden;
 	position:relative;
 }
-#MainContent{
-	margin-top:0!important;
-}
+#MainContent{margin-top:0!important}
 /*Subnav
 ---------------*/
 #DropdownMenuSubNavigator ul ul{box-shadow:none}

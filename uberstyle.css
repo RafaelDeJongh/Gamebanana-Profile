@@ -54,11 +54,11 @@ div.Module.MultipleRowListModule div.Content,
 div.GenericPreviewListModule li{
 	background:#1a1a1a!important;
 }
-.Module > .LogMessages, 
-.Module > h3,
-#PostsListModule .Content > ul > li:nth-child(even),
-#PostAddFormRequesterModule .Content{
+.Module > .LogMessages, .Module > h3, #PostsListModule .Content > ul > li:nth-child(even),#PostAddFormRequesterModule .Content{
 	background:#232324!important;
+}
+#MasterLog{
+	background:rgba(0,0,0,0.2)!important
 }
 body, #Wrapper{
 	width:100%;

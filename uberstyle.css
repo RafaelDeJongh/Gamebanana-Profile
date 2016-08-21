@@ -96,7 +96,7 @@ body, #Wrapper{
 /*Header
 ---------------*/
 #Header{width:90%;margin:auto}
-#HeaderWrapper header{padding:0 3%}
+#HeaderWrapper header{padding:0 3%;background:none!important}
 #HeaderWrapper header #Navigator{float:right;margin-top:4px}
 #NetworkLinks{float:left}
 #NetworkLinks li{display:none}
@@ -155,7 +155,9 @@ li#SearchPane{
 .Module > h3{
 	border:none;
 	text-align:center;
-	font-size:0.9rem;
+	font-weight:bold;
+	color:#fff!important;
+	font-size:1rem;
 }
 .Module > .Content{
 	width:90%;
@@ -193,6 +195,9 @@ img.PreviewImage:hover{opacity:1}
 	-moz-transition:opacity .2s ease;
 	-o-transition:opacity .2s ease;
 	transition:opacity .2s ease;
+	border-left-color:#900;
+	background-color:rgba(0,0,0,.06);
+	padding:0 10px;
 }
 /*ToolTip
 ---------------*/
@@ -366,7 +371,7 @@ button:focus, .ButtonLike:focus, input[type="button"]:focus{
 }
 /*Links
 ---------------*/
-a{
+a, a:visited{
 	color:#eee;
 	text-decoration:none;
 	-webkit-transition:all .2s ease;
@@ -374,7 +379,7 @@ a{
 	-o-transition:all .2s ease;
 	transition:all .2s ease;
 }
-a:visited, a:active, a:hover{color:#fff}
+a:active, a:hover{color:#fff}
 /*Mediaqueries
 ---------------*/
 @media screen and (max-width:960px){

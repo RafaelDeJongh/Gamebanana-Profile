@@ -275,7 +275,7 @@ div#StaffProfileModule{background-color:#1a1a1a}
 	width: 100%;
 	margin: 0;
 }
-.RichText{width:99%}
+.RichText{width:99%!important}
 #PostsListModule .Content > ul > li{
 	padding:1% 5%!important;
 	border:none;

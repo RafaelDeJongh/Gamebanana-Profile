@@ -92,7 +92,9 @@ body, #Wrapper{
 	height:32vw;
 	width:100%;
 	overflow:hidden;
-	position:relative}
+	position:relative;
+	box-shadow:inset 0 0 10rem rgba(0,0,0,.4);
+}
 /*Header
 ---------------*/
 #Header{width:90%;margin:auto}
@@ -133,6 +135,7 @@ li#SearchPane{
 	width:100%;
 	overflow:hidden;
 	position:relative;
+	box-shadow:inset 0 0 10rem rgba(0,0,0,.4);
 }
 #MainContent{margin-top:0!important}
 /*Subnav

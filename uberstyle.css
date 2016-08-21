@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* This uberstyle is created by Rafael De Jongh.
 ** This code is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
 Content Table:
 ------------------
 - Reset
@@ -11,6 +12,7 @@ Content Table:
 	- Banner
 	- Subnav
 - Content
+	- Tooltip
 	- Staff Module
 	- Comments
 	- Footer
@@ -18,6 +20,7 @@ Content Table:
 - Links
 - Scrollbar
 - Selection
+
 Reset
 ------------------*/
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
@@ -95,6 +98,13 @@ body, #Wrapper{
 	width:90%;
 	margin:auto;
 }
+#HeaderWrapper header{
+	padding: 0 3%;
+}
+#HeaderWrapper header #Navigator{
+	float: right;
+	margin-top: 4px;
+}
 #NetworkLinks{float:left}
 #NetworkLinks li{display:none}
 #NetworkLinks li:first-of-type{display:block}
@@ -105,7 +115,7 @@ body, #Wrapper{
 	margin-top:15px;
 }
 li#SearchPane{
-	left:325px!important;
+	left:165px!important;
 	top:-3px!important;
 }
 #SearchPane input{outline:none}
@@ -192,6 +202,20 @@ img.PreviewImage:hover{opacity:1}
 	-o-transition:opacity .2s ease;
 	transition:opacity .2s ease;
 }
+/*ToolTip
+---------------*/
+.tooltipster-base::before{
+	content:"";
+	display:block;
+	position:absolute;
+	top:-16px;
+	left:calc(50% - 10px);
+	width: 0; 
+	height: 0; 
+	border-left:17px solid transparent;
+	border-right:17px solid transparent;
+	border-bottom: 20px solid black;
+}
 /*Staff Module
 ---------------*/
 div#StaffProfileModule{background-color:#1a1a1a}
@@ -211,7 +235,6 @@ div#StaffProfileModule{background-color:#1a1a1a}
 }
 #StaffProfileModule div.Content dd.Biography br{display:none}
 #StaffProfileModule div.Content dd.Biography::after{
-	/*content:"My name is Rafaël De Jongh, I am 21 years old and I am a 2D & 3D artist. I've been doing game modification for a good eight years now and I'm specialized in Texturing. Besides game modification I also enjoy making websites with HTML5, CSS3, PHP and MySQL. \A \A My goal in life is to become a Web Developer and keep game modification as my hobby. These days I mostly spend my time on a known modding community called Gamebanana. There I have my own Studio called Apocalyptic Studios where we practise in various contests to test our own skills and to produce quality content for the Gamebanana community. \A \A More information about myself can be found on my portfolio at www.rafaeldejongh.com or if you have any more question you can contact me directly, using the contact form below.";*/
 	content:"My name is Rafaël De Jongh, I am 21 years old and I am a Web Developer & 3D artist.\A \A My passion in life is to develop and design websites, to always search for a new challenge and keep the focus user centered.\A I started developing websites from a young age, each time facing a new challenge to achieve something new and exciting.\A Experimenting with lots of different code & programming languages made me learn a lot in all these years to what I know today.\A Besides that I love my hobby which is Game Development where I am specialized in creating 2D Textures for 3D models.\A \A My main goal in life is to become a Full Stack Web Developer and keep Game Development as my hobby.\A I am currently studying in college to get my professional bachelor degree in Cross Media Development,\A besides that I mostly spend my time on a known game modding community called Gamebanana.\A \A I am currently searching for a job in the Web Developing sector, but would love a position in the Game Developing sector as well.\A \A More information about myself can be found on:www.rafaeldejongh.com";
 	display:block;
 	border-top:1px solid #232324;
@@ -233,7 +256,7 @@ div#StaffProfileModule{background-color:#1a1a1a}
 	background-image:url("images/RafaelDeJongh.jpg");
 	background-size:cover;
 	height:570px;
-	width:340px;
+	width:350px;
 	display:block;
 	font-size:1rem;
 	float:right;
@@ -248,7 +271,11 @@ div#StaffProfileModule{background-color:#1a1a1a}
 }
 /*Comments
 ---------------*/
-.RichText{font-size:.9rem}
+.ContentEditableEditor .InputWrapper .Editor{
+	width: 100%;
+	margin: 0;
+}
+.RichText{width:99%}
 #PostsListModule .Content > ul > li{
 	padding:1% 5%!important;
 	border:none;
@@ -284,12 +311,22 @@ div#StaffProfileModule{background-color:#1a1a1a}
 }
 .Submit{padding:0}
 .Toolbars{float:left}
-.ViewModeSwitchers{float:right;margin-right:.7%}
+.ViewModeSwitchers{
+	float: left;
+	margin-left: 10px;
+}
 .Modal .Toolbar{float:right}
-.Toolbars button, #ActivityPane .AjaxListPaginator button{box-shadow:none}
 button.CloseModal{border-radius:0}
+.Toolbars button, #ActivityPane .AjaxListPaginator button{
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+	margin: 0 1px;
+}
 .PostTools button{box-shadow:none; margin:0 2px}
 .LabelStat{	border:none!important}
+.MainForm .Submit{
+	padding: 0 15px;
+	margin-top: -10px;
+}
 /*Footer
 ---------------*/
 #rdjfooter{
@@ -338,9 +375,7 @@ a{
 a:visited, a:active, a:hover{color:#fff}
 /*Mediaqueries
 ---------------*/
-@media screen and (max-width:900px){
-	nav#DropdownMenuSubNavigator{display:none}
-	#SkinPreviewListModule{margin-top:105px}
+@media screen and (max-width:960px){
 	#StaffProfileModule div.Content dl{width:100%}
 	#StaffProfileModule .Content::after{
 		min-height:600px;
@@ -349,6 +384,10 @@ a:visited, a:active, a:hover{color:#fff}
 		width:99%;
 		float:left;
 	}
+}	
+@media screen and (max-width:900px){
+	nav#DropdownMenuSubNavigator{display:none}
+	#SkinPreviewListModule{margin-top:105px}
 }
 /*Scrollbar
 ---------------*/

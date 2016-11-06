@@ -344,6 +344,7 @@ div#StaffProfileModule{background-color:#1a1a1a}
 	font-size:.9rem;
 }
 .PageNavigation:first-child{display:none}
+.Modal{box-shadow:none!important}
 .Modal .Contents{
 	padding:0;
 	width:90%;

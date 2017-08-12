@@ -266,7 +266,7 @@ img.PreviewImage:hover{opacity:1}
 /*Staff Module
 ---------------*/
 div#StaffProfileModule{
-	background-color:#1a1a1a
+	background-color:#1a1a1a;
 	display:inline-block;
 	width:100%;
 }

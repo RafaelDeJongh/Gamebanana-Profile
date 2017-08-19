@@ -85,7 +85,6 @@ body, #Wrapper{
 	content:"";
 	display:block;
 	background-image:url(images/header.jpg);
-	/*background-image:url(//rafaeldejongh.tk/data/GB/Rafael/images/header.php);*/
 	background-repeat:no-repeat;
 	background-position:center top;
 	background-attachment:fixed;
@@ -132,7 +131,6 @@ li#SearchPane{
 	content:"";
 	display:block;
 	background-image:url(images/header.jpg);
-	/*background-image:url(http://rafaeldejongh.tk/data/GB/Rafael/images/header.php);*/
 	background-repeat:no-repeat;
 	background-position:center top;
 	background-attachment:fixed;

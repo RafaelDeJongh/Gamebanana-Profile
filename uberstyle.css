@@ -97,6 +97,7 @@ body, #Wrapper{
 }
 /*Header
 ---------------*/
+#HeaderWrapper aside{margin-left:0}
 #Header{width:90%;margin:auto}
 #HeaderWrapper header{padding:0 3%;background:none!important}
 #HeaderWrapper header #Navigator{float:right;margin-top:4px}

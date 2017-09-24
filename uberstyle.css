@@ -65,7 +65,7 @@ body, #Wrapper{
 	height:100%;
 	margin:auto;
 }
-#ColumnGrid{
+#MainContent #ColumnGrid{
 	width:100%;
 	overflow:hidden;
 }
